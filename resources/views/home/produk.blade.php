@@ -42,8 +42,8 @@
                                     <img src="{{ asset('uploads/' . $data->gambar_1) }}" alt="">
                                 </div>
                                 <div class="pr-portfolio-text headline pera-content">
-                                    <h3><a href="portfolio-details.html">Finance project</a></h3>
-                                    <span><a href="portfolio-details.html">Consulting</a></span>
+                                    <h3><a href="{{ url('home/produk/' . $data->id) }}">{{ $data->nama_produk }}</a></h3>
+                                    <span>{{ $data->category->nama_kategori }}</span>
                                     <div class="pr-portfolio-btn">
                                         <a href="{{ url('home/produk/' . $data->id) }}"><i
                                                 class="far fa-long-arrow-right"></i></a>
